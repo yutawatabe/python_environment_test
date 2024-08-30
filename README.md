@@ -62,6 +62,16 @@ The uv.lock file contains the required packages for this packages. The following
 uv sync
 ```
 
+If you want to add the packages, you can do the following:
+
+```bash
+uv add "package name"
+uv lock
+uv sync
+```
+
+These commands will add the packages to the toml file, update the lock file and install the updated packages to the .venv folder.
+
 ## Step 6: Activate the Environment
 In VSCode's integrated terminal:
 - Open a new terminal by pressing `Ctrl+`` (backtick).
