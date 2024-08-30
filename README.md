@@ -41,11 +41,23 @@ pip install uv
 ```
 
 You can also try installing Powershell on Windows or Curl on MacOS. For the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.).
+You can also try installing Powershell on Windows or Curl on MacOS. For the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.).
 
 ## Step 4: Open the Project in VSCode
 
 Launch VSCode and open the project folder:
 
+### Step 5: Create the virtual environment and install Python
+
+The pyproject.toml and uv.lock files specifies the Python version required for the project. The following command can create the virtual environment (.venv folder) in the project folder.
+
+```bash
+uv venv
+```
+
+### Step 6: Install the packages 
+
+The uv.lock file contains the required packages for this packages. The following command will install the packages in .venv folder.
 ### Step 5: Create the virtual environment and install Python
 
 The pyproject.toml and uv.lock files specifies the Python version required for the project. The following command can create the virtual environment (.venv folder) in the project folder.
@@ -63,6 +75,7 @@ uv sync
 ```
 
 ## Step 7: Activate the Environment
+## Step 7: Activate the Environment
 In VSCode's integrated terminal:
 - Open a new terminal by pressing `Ctrl+`` (backtick).
 - Activate the uv environment:
@@ -73,6 +86,17 @@ source .venv/Scripts/activate
 
 This activates the isolated environment where all dependencies are installed.
 
+### Step 8: Select the Python Interpreter
+
+1. Press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette.
+2. Type Python: Select Interpreter and press Enter.
+3. Select the interpreter located in the .uv directory. It should be something like:
+
+```bash
+.venv/Scripts/python.exe
+```
+
+## Step 8: Run and Debug the Code
 ### Step 8: Select the Python Interpreter
 
 1. Press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette.
