@@ -40,48 +40,52 @@ If you don't have uv installed, you can install it via pip:
 pip install uv
 ```
 
-## Step 3: Set Up the Environment with uv
-
-Now, use uv to set up the project environment:
-
-```bash
-uv setup
-```
-
-This command will:
-
-- Download and install the correct Python version specified in the pyproject.toml file.
-- Install all necessary packages and dependencies into an isolated environment located in the .uv directory.
+You can also try installing Powershell on Windows or Curl on MacOS. For the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.).
 
 ## Step 4: Open the Project in VSCode
 
 Launch VSCode and open the project folder:
 
-### Select the Python Interpreter
+### Step 5: Create the virtual environment and install Python
+
+The pyproject.toml and uv.lock files specifies the Python version required for the project. The following command can create the virtual environment (.venv folder) in the project folder.
+
+```bash
+uv venv
+```
+
+### Step 6: Install the packages 
+
+The uv.lock file contains the required packages for this packages. The following command will install the packages in .venv folder.
+
+```bash
+uv sync
+```
+
+## Step 7: Activate the Environment
+In VSCode's integrated terminal:
+- Open a new terminal by pressing `Ctrl+`` (backtick).
+- Activate the uv environment:
+
+```bash
+source .venv/Scripts/activate
+```
+
+This activates the isolated environment where all dependencies are installed.
+
+### Step 8: Select the Python Interpreter
 
 1. Press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette.
 2. Type Python: Select Interpreter and press Enter.
 3. Select the interpreter located in the .uv directory. It should be something like:
 
 ```bash
-.uv/bin/python
+.venv/Scripts/python.exe
 ```
 
-## Step 5: Activate the Environment
-In VSCode's integrated terminal:
-- Open a new terminal by pressing `Ctrl+`` (backtick).
-- Activate the uv environment:
-
-```bash
-source .uv/bin/activate
-```
-
-This activates the isolated environment where all dependencies are installed.
-
-## Step 6: Run and Debug the Code
+## Step 8: Run and Debug the Code
 
 With the environment set up and activated, you can now run and debug the code:
 - Open any Python file from the src directory.
 - Click the "Run" button (a green play icon) at the top right, or press F5 to start debugging.
 - VSCode will use the uv environment, ensuring that the correct Python version and dependencies are in use.
-
