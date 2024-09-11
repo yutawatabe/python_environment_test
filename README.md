@@ -36,9 +36,9 @@ If you are using Windows, you can use Powershell.
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-You need to add a PATH of uv to your computer (which may be done by restaring the computer, or manually adding the path). MacOS have a similar way using curl (for the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.). 
+You need to add a PATH of UV to your computer (which may be done by restarting the computer or manually adding the path). MacOS does a similar thing using curl (for the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/).). 
 
-If have newer python, you can install it via pip:
+If you have a newer Python, you can install it via pip:
 
 ```bash
 pip install uv
