@@ -1,4 +1,4 @@
-# Python Environemnt Test
+# Python Environment Test
 
 Welcome to the Python Environemnt Test! This repository will walk you through the steps to clone the repository, set up the environment using `uv`, and use the project within Visual Studio Code (VSCode).
 
