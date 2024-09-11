@@ -50,7 +50,7 @@ Launch VSCode and open "pyton_environment_test" folder as the project folder:
 
 ### Step 4: Create the virtual environment and install Python
 
-The pyproject.toml and uv.lock files specifies the Python version required for the project. The following command can create the virtual environment (.venv folder) in the project folder.
+The pyproject.toml and uv.lock files specifies the Python version required for the project. The following command can create the virtual environment (.venv folder) in the project folder. Run this command from the console window in VScode (if the console command is absent, check View tab -> Terminal):
 
 ```bash
 uv venv
@@ -58,7 +58,7 @@ uv venv
 
 ### Step 5: Install the packages 
 
-The uv.lock file contains the required packages for this packages. The following command will install the packages in .venv folder.
+The uv.lock file contains the required packages for this packages. The following command will install the packages in .venv folder:
 
 ```bash
 uv sync
