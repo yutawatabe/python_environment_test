@@ -7,15 +7,11 @@ Welcome to the Python Environemnt Test! This repository will walk you through th
 Before you begin, ensure you have the following installed on your system:
 
 1. **Git**: To clone the repository.
-2. **Python**: Make sure Python is installed. You don't need the exact version specified by the project; `uv` will handle that.
-3. **VSCode**: The recommended code editor for this project.
-4. **Python Extension for VSCode**: This extension provides features like linting, debugging, and IntelliSense.
+2. **VSCode**: The recommended code editor for this project.
+3. **Python Extension for VSCode**: This extension provides features like linting, debugging, and IntelliSense.
 
 ### Install Git
 If Git is not installed, you can download and install it from [here](https://git-scm.com/downloads).
-
-### Install Python
-If Python is not installed, you can download and install it from [here](https://www.python.org/downloads/). You don't need the exact version specified by the project; `uv` will handle that.
 
 ### Install VSCode
 If VSCode is not installed, you can download and install it from [here](https://code.visualstudio.com/).
@@ -34,17 +30,23 @@ cd my_project
 
 ## Step 2: Install uv
 
-If you don't have uv installed, you can install it via pip:
+If you are using Windows, you can use Powershell.
+
+```Powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+You need to add a PATH of uv to your computer (which may be done by restaring the computer, or manually adding the path). MacOS have a similar way using curl (for the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.). 
+
+If have newer python, you can install it via pip:
 
 ```bash
 pip install uv
 ```
 
-You can also try installing Powershell on Windows or Curl on MacOS. For the tutorial, look at [here](https://docs.astral.sh/uv/getting-started/installation/.).
-
 ## Step 3: Open the Project in VSCode
 
-Launch VSCode and open the project folder:
+Launch VSCode and open "pyton_environment_test" folder as the project folder:
 
 ### Step 4: Create the virtual environment and install Python
 
